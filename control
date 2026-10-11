@@ -1,0 +1,9 @@
+Package: com.imodcommission.notifyyy
+Name: notifyyy
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: 只控制直屏（竖屏）通知横幅的上下位置，横屏不干预
+Maintainer: imod_commission
+Author: imod_commission
+Section: Tweaks
+Depends: firmware (>= 14.0), mobilesubstrate, preferenceloader

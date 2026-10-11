@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>title</key>
+    <string>notifyyy</string>
+    <key>items</key>
+    <array>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>label</key>
+            <string>通知位置</string>
+            <key>footerText</key>
+            <string>仅对直屏（竖屏）通知生效；横屏时自动使用系统默认布局。</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSSwitchCell</string>
+            <key>label</key>
+            <string>启用</string>
+            <key>defaults</key>
+            <string>com.imodcommission.notifyyy</string>
+            <key>key</key>
+            <string>enabled</string>
+            <key>default</key>
+            <false/>
+            <key>PostNotification</key>
+            <string>com.imodcommission.notifyyy/preferences.changed</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSEditTextCell</string>
+            <key>label</key>
+            <string>纵向偏移（pt）</string>
+            <key>defaults</key>
+            <string>com.imodcommission.notifyyy</string>
+            <key>key</key>
+            <string>customY</string>
+            <key>keyboard</key>
+            <string>NumbersAndPunctuation</string>
+            <key>placeholder</key>
+            <string>0</string>
+            <key>default</key>
+            <string>0</string>
+            <key>PostNotification</key>
+            <string>com.imodcommission.notifyyy/preferences.changed</string>
+        </dict>
+        <dict>
+            <key>cell</key>
+            <string>PSGroupCell</string>
+            <key>footerText</key>
+            <string>负数向上移动，正数向下移动，单位 pt，支持小数。输入完点空白处即生效。</string>
+        </dict>
+    </array>
+</dict>
+</plist>
